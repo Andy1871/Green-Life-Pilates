@@ -47,3 +47,37 @@ window.addEventListener('scroll', function() {
       nav.classList.remove('scrolled');
     }
   });
+
+
+
+
+// Javascript to show thank you message for form
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contact-form");
+    const thankYouMessage = document.getElementById("thank-you");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent the default form submission behavior
+
+      // Prepare form data to send via fetch (AJAX)
+      const formData = new FormData(form);
+
+      // Submit the form data to the current page
+      fetch("/", {
+        method: "POST",
+        body: formData,
+      })
+        .then((response) => {
+          if (response.ok) {
+            // Hide the form and display the thank-you message
+            form.style.display = "none";
+            thankYouMessage.style.display = "block";
+          } else {
+            console.error("Form submission failed:", response.statusText);
+          }
+        })
+        .catch((error) => {
+          console.error("Error submitting the form:", error);
+        });
+    });
+  });
