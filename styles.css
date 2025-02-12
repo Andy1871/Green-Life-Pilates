@@ -157,6 +157,16 @@
     letter-spacing: 2px;
   }
 
+  .inline-h2-text span{
+    display: inline-block;
+  }
+
+  .inline-h2-text span:not(:last-child)::after {
+    content: "•";
+    margin: 0 8px; /* Adjust spacing as needed */
+    color: #999;  /* Optional: change color */
+  }
+
   /*Image/Text side by side sections*/
 
   .split-container{
@@ -228,17 +238,7 @@
     background-repeat: no-repeat;
   }
 
-  /* Media Query for smaller screens */
-@media screen and (max-width: 768px) {
-    .split-container {
-      flex-direction: column;  
-    }
-    
-    .half-width-text,
-    .half-width-image {
-      width: 100%;  
-    }
-  }
+
  
 
   /*Breathe Move Transform banner section*/
@@ -378,3 +378,108 @@ footer{
     height: 250px;
     background-color: black;
 }
+
+.thank-you h2{
+    font-weight: 400;
+}
+
+
+
+/*Smaller Screens*/
+
+  /* Media Query for smaller screens */
+  @media screen and (max-width: 768px) {
+
+    nav {
+        width: 100%;
+        z-index: 200;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .logo{
+        order: 2;
+        margin-bottom: 10px;
+        margin-top: 45px;
+    }
+    .social-icons{
+        order: 3;
+        margin-bottom: 10px;
+        display: none;
+    }
+    .nav-links{
+        order: 1;
+        width: 95%;
+        justify-content: center;
+        top: 0;
+    }
+    .nav-links a{
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+    #link-home{
+        display: none;
+    }
+
+    /*header adjustments*/
+    .header-container{
+        width: 95%;
+        margin: 0 auto;
+        height: 60vh;
+        padding: 20px 0;
+    }
+    .header-container h1{
+        font-size: 3rem;
+        width: 100%;
+    }
+    .header-container h2{
+        font-size: 1.25rem;
+        width: 95%;
+    }
+    
+
+    /*Split containers*/
+    .split-container{
+        flex-direction: column;
+        width: 95%;
+        margin: 30px auto;
+    }
+    
+    .half-width-text,
+    .half-width-image, .half-width-about-image {
+      width: 100%;  
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .text-container{
+        width: 95%;
+        padding: 10px;
+    }
+
+    /*Force text to appear before image in split-container*/
+    .split-container .half-width-text{
+        order: 1;
+    }
+    .split-container .half-width-image, 
+    .split-container .half-width-about-image{
+        order: 2;
+    }
+
+    /*Breathe, move, transform icon section*/
+    .testing{
+        flex-direction: column;
+        width: 95%;
+        margin: 30px auto;
+        height: auto;
+    }
+    .testing > div{
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+    /*Contact form*/
+    .contact-container{
+        width: 90%;
+        margin: 30px auto;
+    }
+  }
