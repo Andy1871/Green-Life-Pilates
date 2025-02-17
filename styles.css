@@ -201,7 +201,7 @@
   .text-container{
     text-align: left;
     width: 75%;
-    padding: 25px 0;
+    padding: 50px 0;
   }
 
 
@@ -248,17 +248,11 @@
     background-repeat: no-repeat;
   }
 
-  .please-note{
-    font-size: 0.75rem;
-    font-style: italic;
-  }
-
-
  
 
   /*Breathe Move Transform banner section*/
 
-.testing{
+.quotes-container{
     height: 250px;
     width: 95%;
     margin: 75px auto;
@@ -269,13 +263,13 @@
     text-align: center;
   } 
 
-.testing h4{
+.quotes-container h4{
     font-size: 1.4rem;
     margin: 5px 0;
     font-weight: 525;
 }
 
-.testing p{
+.quotes-container p{
     line-height: 25px;
 }
 
@@ -397,52 +391,34 @@ form span{
     font-weight: 250;
 }
 
+.thank-you h2{
+  font-weight: 400;
+}
 
-.white{
-    padding: 30px 0;
-    background-color: #eae5e5;
-}
-.white .logo{
-    text-align: center;
-}
-.white .social-icons{
-    text-align: center;
-    margin-top: 10px;
-}
-.white .social-icons a{
-    margin-right: 2.5px;
-    margin-left: 2.5px;
-
-}
-.green{
-    padding: 50px 0;
-    background-color: hsl(88, 19%, 61%, 0.7);
-}
-.green .logo{
-    text-align: center;
-}
-.pink{
-    padding: 50px 0;
-    background-color: hsl(344, 51%, 64%, 0.3);
-}
-.pink .logo{
-    text-align: center;
-}
 
 
 
 /*FOOTER*/
 footer{
-    padding: 50px 0;
-    background-color: #f0f0f0;
+    padding: 30px 0;
 }
 
 footer .logo{
     text-align: center;
 }
 
-.thank-you h2{
-    font-weight: 400;
+footer .social-icons{
+  text-align: center;
+  margin-top: 10px;
+}
+
+footer .social-icons a{
+  margin-right: 2.5px;
+  margin-left: 2.5px;
+}
+footer p{
+  text-align: center;
+  margin-top: 10px;
 }
 
 
@@ -530,13 +506,13 @@ footer .logo{
     }
 
     /*Breathe, move, transform icon section*/
-    .testing{
+    .quotes-container{
         flex-direction: column;
         width: 95%;
         margin: 30px auto;
         height: auto;
     }
-    .testing > div{
+    .quotes-container > div{
         width: 95%;
         margin-bottom: 20px;
     }
