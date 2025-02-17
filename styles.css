@@ -23,12 +23,18 @@
     border: none;
     font-size: 1rem;
     text-transform: uppercase;
+    text-align: center;
     letter-spacing: 1.5px;
     transition: background 0.3s, ease-in-out;
   }
   #btn:hover{
     background-color: hsl(88, 19%, 61%, 0.7);
     cursor: pointer;
+  }
+
+  .button-link {
+    text-decoration: none;
+    display: inline-block;
   }
   
   /* Nav Bar Container */
