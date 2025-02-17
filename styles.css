@@ -38,14 +38,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0 25px 0;
+    padding: 20px 0 25px 0;
     transition: background-color 0.3s ease;
   }
 
 
   /* Left: Logo */
   .logo img {
-    height: 70px; /* adjust as needed */
+    height: 100px; /* adjust as needed */
     width: auto;
   }
   
@@ -55,7 +55,7 @@
     border-radius: 50px;
     display: flex;
     justify-content: space-between;
-    padding: 5px 10px;
+    padding: 10px 10px;
     min-width: 45%;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
     position: fixed;
@@ -102,7 +102,7 @@
   /* Right: Social Icons */
   .social-icons a {
     text-decoration: none;
-    margin-left: 15px;
+    margin-left: 5px;
     transition: color 0.3s;
   }
   
@@ -136,9 +136,9 @@
   }
 
   .header-container h1{
-    font-size: 4rem;
+    font-size: 4.5rem;
     text-transform: uppercase;
-    width: 60%;
+    width: 70%;
     text-align: center;
     margin-bottom: 10px;
     color: #f0f0f0;
@@ -155,6 +155,7 @@
     font-weight: 200;
     color: #f0f0f0;
     letter-spacing: 2px;
+    line-height: 2.5rem;
   }
 
   .inline-h2-text span{
@@ -314,6 +315,20 @@
     margin-bottom: 20px;
 }
 
+.email-p{
+    margin-top: 20px;
+}
+.email-p a{
+    color: #9daf89;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+.email-p a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 
 
 /*FORM*/
@@ -369,14 +384,47 @@ form span{
 }
 
 
+.white{
+    padding: 30px 0;
+    background-color: #eae5e5;
+}
+.white .logo{
+    text-align: center;
+}
+.white .social-icons{
+    text-align: center;
+    margin-top: 10px;
+}
+.white .social-icons a{
+    margin-right: 2.5px;
+    margin-left: 2.5px;
+
+}
+.green{
+    padding: 50px 0;
+    background-color: hsl(88, 19%, 61%, 0.7);
+}
+.green .logo{
+    text-align: center;
+}
+.pink{
+    padding: 50px 0;
+    background-color: hsl(344, 51%, 64%, 0.3);
+}
+.pink .logo{
+    text-align: center;
+}
 
 
 
 /*FOOTER*/
-
 footer{
-    height: 250px;
-    background-color: black;
+    padding: 50px 0;
+    background-color: #f0f0f0;
+}
+
+footer .logo{
+    text-align: center;
 }
 
 .thank-you h2{
@@ -389,6 +437,9 @@ footer{
 
   /* Media Query for smaller screens */
   @media screen and (max-width: 768px) {
+    #btn{
+        color: black;
+    }
 
     nav {
         width: 100%;
@@ -399,7 +450,7 @@ footer{
     .logo{
         order: 2;
         margin-bottom: 10px;
-        margin-top: 45px;
+        margin-top: 53px;
     }
     .social-icons{
         order: 3;
@@ -413,8 +464,7 @@ footer{
         top: 0;
     }
     .nav-links a{
-        font-size: 0.8rem;
-        padding: 5px 10px;
+        padding: 7px 7px;
     }
     #link-home{
         display: none;
@@ -447,7 +497,7 @@ footer{
     .half-width-text,
     .half-width-image, .half-width-about-image {
       width: 100%;  
-      padding: 10px;
+      padding: 25px;
       box-sizing: border-box;
     }
 
@@ -480,6 +530,7 @@ footer{
     /*Contact form*/
     .contact-container{
         width: 90%;
-        margin: 30px auto;
+
+        padding-top: 30px;
     }
   }
