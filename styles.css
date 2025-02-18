@@ -450,11 +450,12 @@ footer p{
     .nav-links{
         order: 1;
         width: 95%;
-        justify-content: center;
+        justify-content: space-between;
         top: 0;
     }
     .nav-links a{
-        padding: 7px 7px;
+        padding: 7px 12px;
+
     }
     #link-home{
         display: none;
@@ -522,5 +523,10 @@ footer p{
         width: 90%;
 
         padding-top: 30px;
+    }
+
+    footer .social-icons{
+      display: block;
+      text-align: center;
     }
   }
