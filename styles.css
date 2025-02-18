@@ -106,18 +106,20 @@
   }
   
   /* Right: Social Icons */
+  .social-icons{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+
   .social-icons a {
     text-decoration: none;
     margin-left: 5px;
     transition: color 0.3s;
   }
-  
-  .social-icons a:hover {
-    color: #d2768f;
-  }
 
   .social-icons img {
-    height: 24px; /* adjust as needed */
+    height: 24px; 
     width: auto;
   }
   
@@ -381,20 +383,7 @@ form button{
     letter-spacing: 1.25px;
     transition: background 0.3s, ease-in-out;
 }
-/*
-  #btn{
-    background-color: #9daf89;
-    padding: 10px 15px;
-    min-width: 100px;
-    border-radius: 30px;
-    border: none;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 1.25px;
-    transition: background 0.3s, ease-in-out;
-  }
-*/
+
 form button:hover{
     background-color: hsl(344, 51%, 64%, 0.8);
     cursor: pointer;
@@ -463,15 +452,16 @@ footer p{
     }
     .social-icons{
         order: 3;
+        display: flex !important;
         margin-bottom: 10px;
-        display: none;
     }
     .nav-links{
         order: 1;
         width: 95%;
-        justify-content: space-between;
+        justify-content: center;
         top: 0;
-        padding: 7px;
+        padding: 5px;
+        gap: 20px;
     }
     .nav-links a{
         padding: 7px 12px;
@@ -554,8 +544,8 @@ footer p{
       display: flex !important;
       justify-content: center;
       order: 2;
-      gap: 10px;
       margin-bottom: 20px;
+      gap: 5px;
     }
     form{ 
       order: 3;
@@ -563,6 +553,7 @@ footer p{
 
       /* Back to Top Button */
     #backToTop {
+      display: none;
       position: fixed;
       bottom: 20px;
       right: 2.5%;
