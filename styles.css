@@ -376,11 +376,25 @@ form button{
     width: 100px;
     border-radius: 30px;
     border: none;
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.25px;
     transition: background 0.3s, ease-in-out;
 }
+/*
+  #btn{
+    background-color: #9daf89;
+    padding: 10px 15px;
+    min-width: 100px;
+    border-radius: 30px;
+    border: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.25px;
+    transition: background 0.3s, ease-in-out;
+  }
+*/
 form button:hover{
     background-color: hsl(344, 51%, 64%, 0.8);
     cursor: pointer;
@@ -421,6 +435,11 @@ footer p{
   margin-top: 10px;
 }
 
+#backToTop{
+  display: none;
+}
+
+
 
 
 /*Smaller Screens*/
@@ -452,6 +471,7 @@ footer p{
         width: 95%;
         justify-content: space-between;
         top: 0;
+        padding: 7px;
     }
     .nav-links a{
         padding: 7px 12px;
@@ -521,12 +541,54 @@ footer p{
     /*Contact form*/
     .contact-container{
         width: 90%;
-
         padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-text{
+      order: 1;
     }
 
+    .contact-container .social-icons{
+      display: flex !important;
+      justify-content: center;
+      order: 2;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    form{ 
+      order: 3;
+    }
+
+      /* Back to Top Button */
+    #backToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 2.5%;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: hsl(344, 51%, 64%, 0.7); 
+      color: #fff;
+      border: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+      transition: opacity 0.3s, transform 0.3s;
+    }
+
+
+
+      /* Show button when user scrolls down */
+      #backToTop.show {
+        display: flex;
+      }
+
     footer .social-icons{
-      display: block;
+      display: block !important;
       text-align: center;
     }
   }
