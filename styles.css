@@ -244,7 +244,7 @@
     background-color: rgb(42, 42, 42);
     min-height: 500px;
     border-radius: 30px;
-    background-image: url('./images/header.jpg');
+    background-image: url('./images/group-class.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -459,13 +459,19 @@ footer p{
     .nav-links{
         order: 1;
         width: 95%;
-        justify-content: space-between;
+        justify-content: center;
+        flex-wrap: wrap;
+        overflow: hidden;
         top: 0;
         padding: 5px;
 
     }
     .nav-links a{
         padding: 7px 12px;
+        font-size: 0.8rem;
+        white-space: nowrap;
+        flex: 1 1 auto;
+        text-align: center;
 
     }
     #link-home{
@@ -550,6 +556,10 @@ footer p{
     }
     form{ 
       order: 3;
+    }
+
+    form button{
+      font-family: "Arsenal", sans-serif;
     }
 
       /* Back to Top Button */
