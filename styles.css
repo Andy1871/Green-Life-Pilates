@@ -298,6 +298,7 @@
 
 /*Contact*/
 
+
 .contact-container{
     margin: 0 auto;
     width: 50%;
@@ -328,7 +329,7 @@
 .email-p{
     margin-top: 20px;
 }
-.email-p a{
+.contact-link{
     color: #9daf89;
     font-weight: bold;
     font-size: 1.1rem;
