@@ -109,12 +109,11 @@
   .social-icons{
     display: flex;
     justify-content: center;
-    gap: 5px;
+    gap: 10px;
   }
 
   .social-icons a {
     text-decoration: none;
-    margin-left: 5px;
     transition: color 0.3s;
   }
 
@@ -412,13 +411,15 @@ footer .logo{
 }
 
 footer .social-icons{
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   margin-top: 10px;
 }
 
 footer .social-icons a{
-  margin-right: 2.5px;
-  margin-left: 2.5px;
+  margin: 0;
 }
 footer p{
   text-align: center;
@@ -454,7 +455,12 @@ footer p{
     .social-icons{
         order: 3;
         display: flex !important;
-        margin-bottom: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+        margin: 0 auto 10px auto;
+        padding: 0;
     }
     .nav-links{
         order: 1;
@@ -550,10 +556,17 @@ footer p{
     .contact-container .social-icons{
       display: flex !important;
       justify-content: center;
+      align-items: center;
+      width: 100%;
       order: 2;
-      margin-bottom: 20px;
-      gap: 5px;
+      margin: 0 auto;
+      gap: 10px;
     }
+
+    .contact-container .social-icons a{
+      margin: 0;
+    }
+
     form{ 
       order: 3;
     }
@@ -594,7 +607,9 @@ footer p{
       }
 
     footer .social-icons{
-      display: block !important;
-      text-align: center;
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
     }
   }
