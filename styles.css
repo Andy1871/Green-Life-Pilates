@@ -129,7 +129,7 @@
   .header-container{
     width: 95%;
     background-color: rgb(181, 181, 181);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/group-class.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/group-class-smaller.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -249,24 +249,25 @@
   }
 
   .reformer-image{
-    background-image: url('./images/reformer.jpg');
+    background-image: url('./images/reformer-ps.jpg');
   }
   .mat-group-image{
-    background-image: url('./images/mat-group.jpg');
+    background-image: url('./images/mat-group-ps.jpg');
   }
   .mat-image{
-    background-image: url('./images/header.jpg');
+    background-image: url('./images/header-ps.jpg');
   }
  
 
   /*Breathe Move Transform banner section*/
 
 .quotes-container{
-    height: 250px;
+
     width: 95%;
     margin: 75px auto;
     display: flex;
-    justify-content: space-evenly;
+    gap: 75px;
+    justify-content: center;
     align-items: center;
     border-radius: 30px;
     text-align: center;
@@ -288,7 +289,14 @@
 }
 
 .breathe-container, .move-container, .transform-container{
-    flex: 0 0 20%;
+    flex: 0 1 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ensures text and icons stay vertically centered */
+    align-items: center; /* Centers content horizontally */
+    min-height: 225px;
+    padding: 25px;
+
 }
 
 
@@ -539,15 +547,21 @@ footer p{
 
     /*Breathe, move, transform icon section*/
     .quotes-container{
+        display: flex;
         flex-direction: column;
         width: 90%;
-        margin: 30px auto;
-        height: auto;
+        margin: 0px auto;
+        gap: 0px;
     }
     .quotes-container > div{
         width: 95%;
-        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
     }
+
+
+  
+
 
     /*Contact form*/
     .contact-container{
