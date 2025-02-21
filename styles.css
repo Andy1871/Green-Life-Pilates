@@ -129,7 +129,7 @@
   .header-container{
     width: 95%;
     background-color: rgb(181, 181, 181);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/header.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/group-class.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -243,12 +243,20 @@
     background-color: rgb(42, 42, 42);
     min-height: 500px;
     border-radius: 30px;
-    background-image: url('./images/group-class.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
 
+  .reformer-image{
+    background-image: url('./images/reformer.jpg');
+  }
+  .mat-group-image{
+    background-image: url('./images/mat-group.jpg');
+  }
+  .mat-image{
+    background-image: url('./images/header.jpg');
+  }
  
 
   /*Breathe Move Transform banner section*/
@@ -516,7 +524,7 @@ footer p{
     }
 
     .text-container{
-        width: 95%;
+        width: 100%;
         padding: 10px;
     }
 
@@ -532,7 +540,7 @@ footer p{
     /*Breathe, move, transform icon section*/
     .quotes-container{
         flex-direction: column;
-        width: 95%;
+        width: 90%;
         margin: 30px auto;
         height: auto;
     }
@@ -543,7 +551,7 @@ footer p{
 
     /*Contact form*/
     .contact-container{
-        width: 90%;
+        width: 85%;
         padding-top: 30px;
         display: flex;
         flex-direction: column;
