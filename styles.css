@@ -732,7 +732,7 @@ footer p{
       opacity: 0;
       visibility: hidden;
       transition: opacity 0.3s, transform 0.3s;
-      transform: translateY(-10px);
+      line-height: 40px;
     }
 
       /* Show button when user scrolls down */
