@@ -4,6 +4,11 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  p{
+    font-size: 1.15rem;
+    line-height: 1.6rem;
+  }
   
   body {
     font-family: "Arsenal", sans-serif;
@@ -186,8 +191,6 @@
 
   }
 
-
-
   .half-width-text{
     width: 50%;
     min-height: 500px;
@@ -257,6 +260,59 @@
   .mat-image{
     background-image: url('./images/header-ps.jpg');
   }
+
+  /*Duo Section*/
+ .duo-container{
+  margin: 50px auto;
+  width: 50%;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 30vh;
+  padding: 3rem;
+ }
+
+
+.duo-container h2{
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin: 0.25rem 0 2rem;
+  font-weight: 350;
+}
+
+.duo-container h4{
+  margin-bottom: 1.25rem;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.duo-container .duo-span{
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #9daf89;
+}
+
+.duo-para{
+  margin: 15px;
+  text-align: left;
+  display: flex;
+  width: 100%;
+}
+
+.duo-para p{
+  align-self: center;
+}
+
+.duo-para img{
+  width: 60px;
+  height: auto;
+  margin-right: 20px;
+}
+
  
 
   /*Breathe Move Transform banner section*/
@@ -305,7 +361,7 @@
     width: 50%;
     min-height: 500px;
     border-radius: 30px;
-    background-image: url('./images/About.jpg');
+    background-image: url('./images/About-fullsize.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -347,9 +403,14 @@
 .contact-link{
     color: #9daf89;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-decoration: none;
 }
+
+.contact-link:hover{
+  text-decoration: underline;
+}
+
 .email-p a:hover{
     text-decoration: underline;
     cursor: pointer;
@@ -408,6 +469,14 @@ form button:hover{
 form span{
     font-size: 12px;
     font-weight: 250;
+}
+
+.name-wrapper{
+  display: flex;
+  gap: 20px;
+}
+.name-wrapper .name{
+  flex: 1;
 }
 
 .thank-you h2{
@@ -545,6 +614,23 @@ footer p{
         order: 2;
     }
 
+
+    /*Duo section*/
+
+    .duo-container{
+      width: 100%;
+      margin: 10px 0;
+    }
+    .duo-container img{
+      height: 60px;
+      margin: 0 auto;
+    }
+    .duo-para{
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
     /*Breathe, move, transform icon section*/
     .quotes-container{
         display: flex;
@@ -615,6 +701,15 @@ footer p{
       justify-content: center;
       align-items: center;
       gap: 10px;
+    }
+
+    .name-wrapper{
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .name-wrapper .name:last-child {
+      margin-bottom: 0;
     }
 
       /* Back to Top Button */
