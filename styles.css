@@ -21,6 +21,7 @@
 
 
   #btn{
+    color: black;
     background-color: #9daf89;
     padding: 10px 15px;
     min-width: 100px;
@@ -840,10 +841,15 @@ footer p{
     /*Button colours to turn black not blue*/
     #btn{
       color:#333;
+      
     }
 
     /*Wider text box int he header*/
-    .header-container h1 h2{
+    .header-container{
+      height: 60vh;
+    }
+    .header-container h1, 
+    .header-container h2{
       width: 90%;
     }
 
@@ -851,14 +857,42 @@ footer p{
       width: 80%;
     }
 
-    /*Narrower nav bar (links)*/
+    /*Nav bar*/
+
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+    .nav-links{
+      width: 75%;
+      order: 1;
+    }
+    
+    .logo{
+      order: 2;
+      margin-top: 100px;
+      margin-bottom: 10px;
+    }
+    
+    .social-icons{
+      order: 3;
+    }
+
+    /*Duo Container*/
 
     .duo-container h4{
       width: 95%;
     }
 
     .grid-list{
-      width: 100%;
+      width: 90%;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .duo-container .grid-list li{
+      width: 90%;
+      margin: 20px auto;
     }
 
     /*Breathe move transform to be closer together */
@@ -883,9 +917,29 @@ footer p{
       align-items: center;
   }
 
+  .contact-container .social-icons{
+    order: 2;
+    margin-bottom: 30px;
+  }
+
     form button{
       font-family: "Arsenal", sans-serif;
       font-weight: normal;
+      padding: 10px 15px;
+      width: 100px;
+      border-radius: 30px;
+      border: none;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1.25px;
+    }
+
+    .contact-text{
+      order: 1;
+    }
+
+    form{ 
+      order: 3;
     }
 
 
