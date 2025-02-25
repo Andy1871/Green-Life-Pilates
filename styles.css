@@ -288,38 +288,13 @@
 .duo-container h4{
   font-size: 1.3rem;
   width: 60%;
+  line-height: 15px;
 }
 
 .duo-container .duo-span{
   font-weight: bold;
   font-size: 1.2rem;
   /*color: #9daf89;*/
-}
-
-.duo-para-container{
-  display: flex;
-  flex-direction: column;
-  width: 75%;
-  margin-bottom: 20px;
-}
-
-.duo-para{
-  margin: 15px;
-  text-align: left;
-  display: flex;
-  width: 100%;
-  background:  hsl(344, 51%, 64%, 0.3);
-  border-radius: 30px;
-  padding: 15px;
-}
-
-.duo-para p{
-  align-self: center;
-}
-
-.duo-para img{
-  width: 60px;
-  height: 60px;
 }
 
 
@@ -329,8 +304,8 @@
   grid-template-columns: 1fr 1fr; /* Creates two equal-width columns */
   padding: 0;
   list-style: none;
-  max-width: 80%;
-  margin: 20px auto;
+  width: 70%;
+  margin: 30px auto;
   font-size: 1.2rem;
 }
 
@@ -352,8 +327,8 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 60px;      /* Adjust size as needed */
-  height: 60px;     /* Adjust size as needed */
+  width: 60px;     
+  height: 60px;     
   background: url('./images/lotus.png') no-repeat center center;
   background-size: contain;
 }
@@ -375,14 +350,7 @@
   z-index: -1;  /* Places the pseudo-element behind the text */
 }
 
-.duo-container img{
-  width: 60px;
-  height: 60px;
-}
 
-
-
- 
 
   /*Breathe Move Transform banner section*/
 
@@ -884,15 +852,15 @@ footer p{
       width: 95%;
     }
 
-    .grid-list{
+    .duo-container .grid-list{
       width: 90%;
       grid-template-columns: 1fr 1fr;
-      gap: 25px;
+      gap: 40px;
     }
 
     .duo-container .grid-list li{
-      width: 90%;
-      margin: 20px auto;
+      width: 100%;
+      margin: 20px 0px;
     }
 
     /*Breathe move transform to be closer together */
