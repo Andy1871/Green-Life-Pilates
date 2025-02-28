@@ -555,6 +555,7 @@ footer p{
 
 /*Mobile Styling*/
 
+
   @media screen and (max-width: 768px) {
     #btn{
         color: black;
@@ -654,6 +655,7 @@ footer p{
     .duo-container{
       width: 100%;
       margin: 10px 0;
+      padding: 1rem;
     }
     .duo-container img{
       height: 60px;
@@ -672,8 +674,9 @@ footer p{
 
     .grid-list {
       grid-template-columns: repeat(1, 1fr); 
-      max-width: 100%; 
+      width: 90%; 
       gap: 10px; 
+      margin: 20px 10px;
     }
     
     .duo-container .grid-list li {
