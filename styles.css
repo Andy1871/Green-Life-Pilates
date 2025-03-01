@@ -362,6 +362,7 @@
     justify-content: center;
     border-radius: 30px;
     text-align: center;
+    position: relative;
   } 
 
 .quotes-container h4{
@@ -388,6 +389,15 @@
     min-height: 225px;
     padding: 25px;
 
+}
+
+.quote-name{
+  font-style: italic;
+  position: absolute;
+  right: 10px;
+  bottom: -30px;
+  margin: 0;
+  font-size: 0.95rem;
 }
 
 
@@ -458,6 +468,7 @@ form{
     width: 100%;
     text-align: left;
     padding-bottom: 60px;
+    padding-top: 25px;
 }
 
 form div{
