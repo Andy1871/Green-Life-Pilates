@@ -753,7 +753,7 @@ footer p{
         display: flex;
         flex-direction: column;
         width: 90%;
-        margin: 10px auto;
+        margin: 10px auto 75px auto;
         gap: 0px;
     }
   
@@ -771,6 +771,11 @@ footer p{
     .transform-container{
       margin-top: 15px;
     }
+
+    .quote-name{
+      bottom: -42.5px;
+    }
+
 
   
 
