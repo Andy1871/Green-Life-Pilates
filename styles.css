@@ -669,7 +669,8 @@ footer p{
 
     .duo-container h4{
       width: 100%;
-      text-align: left;
+      margin: 0 auto;
+      text-align: center;
     }
 
     .grid-list {
