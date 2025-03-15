@@ -32,10 +32,12 @@
     text-align: center;
     letter-spacing: 1.25px;
     transition: background 0.3s, ease-in-out;
+
   }
   #btn:hover{
     background-color: hsl(88, 19%, 61%, 0.7);
     cursor: pointer;
+
   }
 
   .button-link {
@@ -132,12 +134,18 @@
 
    /*Header*/
 
+   /*@keyframes banner-rotate{
+    0%, 33% { background-image: url('./images/pro-new/1-DSC_2938_b&w_140dpi.jpg'); }
+    34%, 66% { background-image: url('./images/pro-new/Reformer_Landscape_Header_2.jpeg'); }
+    67%, 100% { background-image: url('./images/pro/2-DSC_2944_b&w_a.avif'); }
+   }*/
+
   .header-container{
     width: 95%;
-    background-color: rgb(181, 181, 181);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/group-class-smaller.jpg');
+    /*background-image: url('./images/pro-new/Reformer_Landscape_Header_2.jpeg');*/
+    background-image: url('./images/pro-new/2-DSC_2944_72dpi.jpg');
     background-size: cover;
-    background-position: center;
+    background-position:left;
     background-repeat: no-repeat;
     height: 75vh;
     display: flex;
@@ -146,7 +154,31 @@
     align-items: center;
     margin: 0 auto;
     border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    color: #f0f0f0;
+    /*animation: banner-rotate 9s infinite;*/
   }
+
+  .header-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity for readability */
+    border-radius: 30px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.header-container a.button-link{
+  position: relative;
+  z-index: 2;
+}
+
+
 
   .header-container h1{
     font-size: 4.5rem;
@@ -158,6 +190,8 @@
     letter-spacing: 2px;
     font-family: "Arsenal", serif;
     font-weight: 100;
+    z-index: 2;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
   }
 
   .header-container h2{
@@ -169,16 +203,20 @@
     color: #f0f0f0;
     letter-spacing: 2px;
     line-height: 2.5rem;
+    z-index: 2;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
   }
 
   .inline-h2-text span{
     display: inline-block;
+    z-index: 2;
   }
 
   .inline-h2-text span:not(:last-child)::after {
     content: "•";
     margin: 0 8px; /* Adjust spacing as needed */
     color: #999;  /* Optional: change color */
+    z-index: 2;
   }
 
   /*Image/Text side by side sections*/
@@ -253,13 +291,13 @@
   }
 
   .reformer-image{
-    background-image: url('./images/reformer-ps.jpg');
+    background-image: url('./images/pro/10-DSC_3166_1200x800.jpg');
   }
   .mat-group-image{
     background-image: url('./images/mat-group-ps.jpg');
   }
   .mat-image{
-    background-image: url('./images/header-ps.jpg');
+    background-image: url('./images/pro-new/12-DSC_3260_72dpi_cropped.jpg');
   }
 
   /*Duo Section*/
@@ -406,7 +444,7 @@
     width: 50%;
     min-height: 500px;
     border-radius: 30px;
-    background-image: url('./images/About-fullsize.jpg');
+    background-image: url('./images/pro/15-DSC_3394_1200x800.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
