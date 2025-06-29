@@ -19,6 +19,10 @@
     scroll-behavior: smooth;
   }
 
+  #google-reviews{
+    margin: 50px 0;
+  }
+
 
   #btn{
     color: black;
@@ -35,7 +39,7 @@
 
   }
   #btn:hover{
-    background-color: hsl(88, 19%, 61%, 0.7);
+    background-color: #9dae89b3;
     cursor: pointer;
 
   }
@@ -462,7 +466,7 @@
     text-align: center;
     gap: 30px;
     min-height: 60vh;
-    padding-top: 100px;
+
 }
 
 .contact-text{
