@@ -28,14 +28,15 @@ Includes a Google Reviews widget, responsive layout for mobile and tablet, and r
 ##  Screenshots
 
 ### Desktop
-![Desktop Screenshot](screenshots/desktop-view.png)
+<img width="1259" height="1274" alt="desktop-view" src="https://github.com/user-attachments/assets/f47cfea6-6a4a-4ed5-a171-e31b67d08d48" />
 
 ### Mobile
-![Mobile Screenshot](screenshots/mobile-view.png)
+![mobile-view](https://github.com/user-attachments/assets/6aea14b5-ebda-4e3a-97bf-bfcc402212c6)
+
 
 ### Contact Form
-![Form Screenshot](screenshots/form-view.png)
-![Form Thankyou Screenshot](screenshots/form-thankyou.png)
+<img width="1287" height="883" alt="form-view" src="https://github.com/user-attachments/assets/d66c24b3-d4e0-4efd-a582-a3eafc72e8ad" />
+<img width="1057" height="519" alt="form-thankyou" src="https://github.com/user-attachments/assets/1dec1f09-cebe-49e6-a622-dd48e6016900" />
 
 ---
 
